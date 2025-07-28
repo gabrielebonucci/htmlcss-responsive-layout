@@ -10,3 +10,68 @@
     font-family: Montserrat, 'Helvetica Neue', sans-serif;
     font-size: 12px;
 }
+
+.float-sx{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.clearfix::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+/* header */
+
+header{
+    background-color: white;
+    height: 100px;
+}
+
+/* parte del contenuto */
+
+.container{
+    width: 70%;
+    margin: 50px auto;
+    /* debug */
+    min-height: 300px;
+    background-color: red;
+}
+
+.row{
+    display: flex;
+
+}
+
+.col-sx{
+    width: 70%;
+    /* debug */
+    min-height: 150px;
+    background-color: blue
+}
+
+.col-dx{
+    width: 30%;
+    /* debug */
+    min-height: 150px;
+    background-color: orange
+}
+
+/* tablet contenuto video */
+@media screen and (max-width:1020px) {
+
+    .row{
+        display: block;
+    }
+
+    .col-sx, .col-dx{
+        width: 100%
+    }
+}
+    /* regole footer */
+footer {
+    background-color: purple;
+    height: 100px;
+}
