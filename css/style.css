@@ -46,8 +46,7 @@ header{
     padding: 15px;   
     font-family: 'Montserrat',cursive;
     color: #FF9614;
-    font-weight: bold;   
-text-shadow: 0px 1px 1px #000000;   
+    text-shadow: 0px 1px 1px #000000;   
 }
 
 /* parte del contenuto */
@@ -140,7 +139,7 @@ ul{
     background-color: white;
     padding: 10px 15px;
     border: 1px transparent #777;
-    border-radius: 30px;
+    border-radius: 20px;
     font-weight: bold;
 
 
@@ -164,7 +163,8 @@ ul{
 }
 
 .title-line{
-    height: 3px;
+    border: none;
+    height: 2px;
     width: 50px;
     background-color:#f3b10c;
     margin-bottom: 25px;
@@ -189,8 +189,11 @@ ul{
     font-size: 20px;
 }
 
+/* regole footer */
+
+
 footer{
-    background-color: #323232;
+    background-color: #7C69A4;
     color: #a0a0a0;
     font-size: 12px;
     padding: 30px 15px;
@@ -204,7 +207,7 @@ footer{
     margin: 0 auto;
 }
 
-.footer-content span{
+.footer-content {
     color: white;
 }
 
@@ -220,6 +223,17 @@ footer{
 
 @media screen and (max-width:1020px) {
 
+
+    .container{
+        width: 100%;
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    .main-content{
+        padding: 30px;
+    }
+
     .row{
         display: block;
     }
@@ -227,10 +241,68 @@ footer{
     .col-sx, .col-dx{
         width: 100%
     }
+    body{
+        font-size: 14px;
+    }
+
+    .social-links span{
+        display: none;
+    }
 }
 
-/* regole footer */
+@media screen and (max-width:779px) {
 
-footer {
-    background-color: #7C69A4;
+
+    .container{
+        padding: 10px;
+    }
+    
+    .presentation img,.presentation span{
+        width: 100%;
+
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    .social-links a{
+        display: flex;
+        flex-grow: 0;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+    .banner{
+        display: none;
+    }
+
+    .subtitle{
+        display: none;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        flex-wrap: wrap;
+
+
+    }
+
+    footer-links a{
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .footer-subtitle{
+        margin-top: 10px;
+    }
+
 }
+
