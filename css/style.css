@@ -138,21 +138,38 @@ ul{
     text-decoration: none;
     color: black;
     background-color: white;
-    padding: 12px;
-    border-right: 1px solid #777;
+    padding: 10px 15px;
+    border: 1px transparent #777;
     border-radius: 30px;
     font-weight: bold;
 
 
 }
 
+
 /* banner */
 .banner img{
     width: 100%;
     display: block;
+
 }
 
 /* section presentation */
+
+.presentation h2{
+    font-size: 35px;
+    font-weight: lighter;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.title-line{
+    height: 3px;
+    width: 50px;
+    background-color:#f3b10c;
+    margin-bottom: 25px;
+
+}
 
 .presentation{
     margin-top: 40px;
@@ -160,16 +177,40 @@ ul{
 }
 
 .presentation-content img{
-    width: 35%;
+    width: 40%;
     flex-shrink: 0;
     display: block;
 }
 
 .presentation-content span{
-    width: 65%;
+    width: 60%;
     line-height: 2;
     text-align: justify;
     font-size: 20px;
+}
+
+footer{
+    background-color: #323232;
+    color: #a0a0a0;
+    font-size: 12px;
+    padding: 30px 15px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.footer-content span{
+    color: white;
+}
+
+.footer-links a{
+    color: white;
+    margin: 5px 10px;
 }
 
 
@@ -191,5 +232,5 @@ ul{
 /* regole footer */
 
 footer {
-    background-color: purple;
+    background-color: #7C69A4;
 }
